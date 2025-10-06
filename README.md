@@ -4,17 +4,17 @@ API REST completa con autenticación JWT y CRUD de cursos de blockchain. Incluye
 
 
 
-## Requisitos
+## Requisitos (Debes tener instalado previamente Docker)
 
 - Docker
 - Docker Compose
 
 ##  Instalación y Ejecución
 
-### 1. Clonar el repositorio 
+### 1. Realiza un fork de este proyecto, leugo clona el repositorio 
 ```bash
 git clone <url-repositorio>
-cd prueba-tecnica
+cd test-front-mobile
 ```
 
 ### 2. Levantar los servicios con Docker
@@ -23,16 +23,6 @@ docker-compose up --build
 ```
 
 La API estará disponible en: `http://localhost:3000`
-
-### 3. Detener los servicios
-```bash
-docker-compose down
-```
-
-### 4. Limpiar volúmenes (eliminar datos de BD)
-```bash
-docker-compose down -v
-```
 
 ##  Endpoints
 
