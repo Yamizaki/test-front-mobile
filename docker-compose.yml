@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:7.0
+    container_name: mongodb_blockchain
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - blockchain_network
+
+  api:
+    build: .
+    container_name: api_blockchain
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - MONGODB_URI=mongodb://mongo:27017/apirest
+      - JWT_SECRET=mi_clave_secreta_jwt_2024
+      - JWT_EXPIRE=24h
+    depends_on:
+      - mongo
+    networks:
+      - blockchain_network
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+volumes:
+  mongo_data:
+
+networks:
+  blockchain_network:
+    driver: bridge

@@ -2,22 +2,16 @@
 
 API REST completa con autenticación JWT y CRUD de cursos de blockchain. Incluye seed de datos inicial.
 
-## 🚀 Tecnologías
 
-- **Node.js** + **Express**
-- **MongoDB** + **Mongoose**
-- **JWT** (JSON Web Tokens)
-- **Docker** + **Docker Compose**
-- **bcryptjs** para encriptación de contraseñas
 
-## 📋 Requisitos
+## Requisitos
 
 - Docker
 - Docker Compose
 
-## 🔧 Instalación y Ejecución
+##  Instalación y Ejecución
 
-### 1. Clonar el repositorio (si aplica)
+### 1. Clonar el repositorio 
 ```bash
 git clone <url-repositorio>
 cd prueba-tecnica
@@ -40,7 +34,7 @@ docker-compose down
 docker-compose down -v
 ```
 
-## 📚 Endpoints
+##  Endpoints
 
 ### Autenticación (Públicos)
 
@@ -139,7 +133,7 @@ DELETE /api/courses/:id
 Authorization: Bearer <token>
 ```
 
-## 👤 Usuarios de Prueba (Seed)
+## Usuarios de Prueba (Seed)
 
 Al iniciar el servicio, se crean automáticamente estos usuarios:
 
@@ -148,7 +142,7 @@ Al iniciar el servicio, se crean automáticamente estos usuarios:
 | admin@blockchain.com | admin123 | admin |
 | user@blockchain.com | user123 | user |
 
-## 📊 Datos de Seed
+## Datos de Seed
 
 El sistema incluye 8 cursos de blockchain precargados:
 - Introducción a Blockchain
@@ -160,7 +154,7 @@ El sistema incluye 8 cursos de blockchain precargados:
 - Tokenomics y Economía Cripto
 - Blockchain para Empresas
 
-## 🔐 Autenticación
+## Autenticación
 
 Todas las rutas de `/api/courses` están protegidas y requieren un token JWT válido.
 
@@ -169,7 +163,7 @@ Para acceder, incluye el token en el header:
 Authorization: Bearer <tu_token_jwt>
 ```
 
-## 📝 Modelo de Datos
+## Modelo de Datos
 
 ### Course (Curso)
 ```javascript
@@ -201,7 +195,7 @@ Authorization: Bearer <tu_token_jwt>
 }
 ```
 
-## 🛠️ Variables de Entorno
+## Variables de Entorno
 
 Configuradas en `docker-compose.yml`:
 
@@ -212,7 +206,7 @@ JWT_SECRET=mi_clave_secreta_jwt_2024
 JWT_EXPIRE=24h
 ```
 
-## 📦 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 prueba-tecnica/
@@ -243,7 +237,7 @@ prueba-tecnica/
 └── README.md
 ```
 
-## 🧪 Probar la API
+## Probar la API
 
 Puedes usar herramientas como:
 - **Postman**
@@ -264,6 +258,6 @@ curl -X GET http://localhost:3000/api/courses \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
-## 📄 Licencia
+## Licencia
 
 ISC
