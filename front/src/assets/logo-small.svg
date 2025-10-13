@@ -1,0 +1,27 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo circular con gradiente -->
+  <circle cx="24" cy="24" r="24" fill="url(#gradient)" />
+  
+  <!-- Blockchain blocks -->
+  <rect x="9" y="15" width="9" height="6" rx="1.5" fill="white" opacity="0.9" />
+  <rect x="19.5" y="15" width="9" height="6" rx="1.5" fill="white" opacity="0.9" />
+  <rect x="30" y="15" width="9" height="6" rx="1.5" fill="white" opacity="0.9" />
+  
+  <!-- Connecting lines -->
+  <line x1="18" y1="18" x2="19.5" y2="18" stroke="white" stroke-width="1.5" opacity="0.7" />
+  <line x1="28.5" y1="18" x2="30" y2="18" stroke="white" stroke-width="1.5" opacity="0.7" />
+  
+  <!-- Graduation cap icon -->
+  <path d="M24 25.5L15 22.5V28.5C15 30.1569 18.6863 31.5 24 31.5C29.3137 31.5 33 30.1569 33 28.5V22.5L24 25.5Z" fill="white" opacity="0.9" />
+  <path d="M24 25.5L12 21L24 16.5L36 21L24 25.5Z" fill="white" />
+  <path d="M33 21V25.5L34.5 26.25V20.25L33 21Z" fill="white" opacity="0.8" />
+  
+  <!-- Gradiente definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
